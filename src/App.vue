@@ -1,6 +1,18 @@
 <template>
   Vue 3 katas
+  <UserRepositories />
 </template>
+
+<script>
+import UserRepositories from '@/katas/composition-api/START/UserRepositories.vue'
+
+export default {
+  name: "App",
+  components: {
+    UserRepositories
+  }
+}
+</script>
 
 <style>
 #app {
