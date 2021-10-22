@@ -1,0 +1,1 @@
+Example from https://v3.vuejs.org/guide/composition-api-introduction.html#why-composition-api

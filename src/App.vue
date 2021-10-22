@@ -1,28 +1,18 @@
 <template>
-  <div class="text-2xl">
-    Vue 3 composition API katas
-  </div>
-  <UserRepositories />
+  <TheHeader>
+    <template #title>
+      Vue 3 composition API katas
+    </template>
+  </TheHeader>
 </template>
 
 <script>
-import UserRepositories from '@/katas/composition-api/START/UserRepositories.vue'
+import TheHeader from '@/components/TheHeader.vue'
 
 export default {
   name: "App",
   components: {
-    UserRepositories
+    TheHeader
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
