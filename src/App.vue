@@ -1,5 +1,7 @@
 <template>
-  Vue 3 katas
+  <div class="text-2xl">
+    Vue 3 composition API katas
+  </div>
   <UserRepositories />
 </template>
 
@@ -15,8 +17,6 @@ export default {
 </script>
 
 <style>
-@import '@/styles/index.css';
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
