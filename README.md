@@ -9,3 +9,4 @@ Plans:
 - [ ] User login
 - [ ] Integrated IDE
 - [ ] Leveling system
+- [ ] Responsive layout
