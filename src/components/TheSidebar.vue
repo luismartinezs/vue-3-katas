@@ -19,6 +19,10 @@ export default {
         {
           label: 'Start here',
           path: '/start-here'
+        },
+        {
+          label: 'test Kata',
+          path: '/kata/test-kata'
         }
       ]
     }

@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <ul class="flex flex-nowrap">
+  <nav class="w-full">
+    <ul class="flex flex-nowrap justify-between items-center">
       <li>
         <router-link :to="`/kata/${$route.params.slug}/instructions`">Instructions</router-link>
       </li>

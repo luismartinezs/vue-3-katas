@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import StartHere from "@/components/StartHere.vue";
-import NotFoundComponent from "@/components/NotFoundComponent.vue";
-import KataWrapper from "@/components/KataWrapper.vue";
+const StartHere = import("@/components/StartHere.vue");
+const NotFoundComponent = import("@/components/NotFoundComponent.vue");
+const KataWrapper = import("@/components/KataWrapper.vue");
 
 const routes = [
   { path: "/", redirect: "/start-here" },
@@ -12,17 +12,21 @@ const routes = [
   {
     path: "/kata/:slug",
     component: KataWrapper,
+    redirect: { name: "instructions" },
     children: [
       {
         path: "instructions",
+        name: "instructions",
         component: KataWrapper,
       },
       {
         path: "start",
+        name: "start",
         component: KataWrapper,
       },
       {
         path: "finish",
+        name: "finish",
         component: KataWrapper,
       },
     ],

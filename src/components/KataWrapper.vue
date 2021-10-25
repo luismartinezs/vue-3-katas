@@ -1,14 +1,17 @@
 <template>
   <KataNav />
-  <span>{{$route.params.slug}}</span>
+  <div v-if="$route.name === 'instructions'">Instructions</div>
+  <div v-if="$route.name === 'start'">Start</div>
+  <div v-if="$route.name === 'finish'">Finish</div>
 </template>
 
 <script>
 import KataNav from '@/components/KataNav.vue'
 export default {
   name: "KataWrapper",
-  components: {KataNav},
-  setup () {
+  components: { KataNav },
+  setup() {
+
     return {
 
     }
